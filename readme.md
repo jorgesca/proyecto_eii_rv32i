@@ -35,8 +35,8 @@ Tabla 1: Funciones de la ALU.
 - Describir en lenguaje de descripción de hardware y evaluar mediante simulación los siguientes elementos de memoria:
   - Registro de 32 bit con reset sincrónico y habilitación.
   - Memoria RAM de dos puertos sincrónicos (lectura y escritura) de 512x32 bit.
-  - Conjunto de registros de 32x32 bit de tres puertos sincrónicos, dos de lectura y uno de escritura. El registro cero será de solo lectura y su valor será siempre '0'.
-
+  - Conjunto de registros de 32x32 bit de tres puertos sincrónicos, dos de lectura y uno de escritura. El registro cero será de solo lectura y su valor será siempre '0'.  
+*Nota:* La memoria RAM y el conjunto de registros deben ser especificadas de modo que puedan sintetizarse en bloques de BRAM de la familia Lattice iCE40. Esto requiere que *tanto los puertos de lectura como escritura sean sincrónicos*. Consultar [Memory Usage Guide for iCE40 Devices](https://www.latticesemi.com/m/%7E/media/LatticeSemi/Documents/ApplicationNotes/MO/MemoryUsageGuideforiCE40Devices.pdf?document_id=47775)
 - Describir el conjunto de registros de la arquitectura RISC-V
 - Estudiar, del conjunto de instrucciones RV32I
   - Describir la estructura de las instrucciones tipo R, I, S, B, U y J.
